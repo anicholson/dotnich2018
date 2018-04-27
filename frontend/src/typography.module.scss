@@ -1,0 +1,15 @@
+@import "./colors.module.scss";
+
+$mainFont: "Cooper Hewitt", "Helvetica Neue", Arial, sans-serif;
+
+:global {
+    h1 {
+	font-weight: bold;
+	color: $cinnamon;
+    }
+
+    h2 {
+	font-weight: 500;
+	color: $cinnamon;
+    }
+}

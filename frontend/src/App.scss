@@ -1,0 +1,10 @@
+@import "./typography.module.scss";
+
+body {
+    font-family: $mainFont;
+}
+
+.App {
+    width: 1024px;
+    margin: 0 auto;
+}
