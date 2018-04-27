@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Writing } from './icons';
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +22,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <div>
+          <Writing size={124} />  
+        </div>
       </div>
     );
   }
