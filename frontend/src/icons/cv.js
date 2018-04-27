@@ -1,74 +1,29 @@
 import React, { Component } from "react";
+import styles from "./icon.module.scss";
+const CV = ({size}) => {
+    let oldSizeRatio = size / 134.0;
+    return (
+	    <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+    <defs>
+            <circle id="cv_b" cx={64 * oldSizeRatio} cy={64 * oldSizeRatio} r={64 * oldSizeRatio} />
+        <filter id="cv_a" width="112.1%" height="112.1%" x="-5.2%" y="-4.4%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dx="1" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.843137255 0 0 0 0 0.717647059 0 0 0 0 0.529411765 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fillRule="evenodd">
+        <g transform="translate(4 3)">
+            <use fill="#000" filter="url(#cv_a)" xlinkHref="#cv_b"/>
+            <use className={styles.background} xlinkHref="#cv_b"/>
+        </g>
+        <g fill="#5E5553" fillRule="nonzero">
+            <path className={styles.mainColor} d="M35.208 32.357c9.3-2.926 8.674 13.1.192 12.289-6.099-.584-5.645-10.574-.192-12.289zM102.442 34.99c-1.234 5.847-10.202 3.414-16.333 3.533-5.286.105-11.38.538-16.787.673-5.437.135-11.829 1.761-14.78-1.816 2.221-3.761 8.794-2.342 12.66-2.657 6.583-.534 14.941-.62 20.886-.736 4.494-.091 10.061-.29 14.354 1.002zM40.963 59.717c5.465 7.202-4.474 14.85-8.863 9.563-3.608-4.345 1.16-10.961 8.863-9.563zM102.884 63.253c-.59 4.097-5.54 2.956-8.555 3.003-11.1.175-21.713 1.148-31.12 1.308-3.057.049-6.585-.005-9.035-1.497-.78-3.93 4.107-3.758 8.134-3.817 8.85-.129 21.757.053 31.957-.09 3.188-.047 6.66-1.884 8.619 1.093zM39.89 95.79c-2.25.435-3.4 1.762-5.714 1.317-10.557-2.018 1.616-18.184 6.789-11.166 2.208 2.993.117 6.321-1.075 9.848zM102.081 90.31c-3.678 3.335-10.766 1.5-17.588 1.913-7.59.457-15.008 1.352-22.1 1.574-2.895.09-6.014 1.378-7.808-1.517.074-4.816 4.432-3.245 7.731-3.397 5.066-.237 10.986-.643 17.195-.68 8.092-.053 17.944-3.146 22.57 2.106z"/>
+        </g>
+    </g>
+</svg>
+)};
 
-const CV = (size) => (
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   x="0px"
-   y="0px"
-   viewBox="0 0 56.909417 50.907266"
-   enable-background="new 0 0 61.439 70.56"
-   xml:space="preserve"
-   id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="cv.svg"
-   width="56.909416"
-   height="50.907265"><metadata
-     id="metadata24"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs22" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="2558"
-     inkscape:window-height="1438"
-     id="namedview20"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="2.6757371"
-     inkscape:cx="-33.012744"
-     inkscape:cy="16.689126"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" /><path
-     d="m 4.0664149,0.27913937 c 7.2620001,-2.28499997 6.7730001,10.22799963 0.15,9.59500003 -4.76199999,-0.456 -4.40799999,-8.256 -0.15,-9.59500003 z"
-     id="path4"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /><path
-     d="m 56.564415,2.3341394 c -0.964,4.566 -7.966,2.666 -12.753,2.759 -4.128,0.082 -8.886,0.42 -13.108,0.526 -4.245,0.105 -9.236,1.375 -11.54,-1.418 1.734,-2.937 6.866,-1.829 9.884,-2.075 5.141,-0.417 11.667,-0.484 16.309,-0.575 3.509,-0.071 7.856,-0.226 11.208,0.783 z"
-     id="path6"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /><path
-     d="m 8.5604149,21.642139 c 4.2670001,5.623 -3.494,11.595 -6.921,7.467 -2.817,-3.393 0.906,-8.559 6.921,-7.467 z"
-     id="path8"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /><path
-     d="m 56.909415,24.403139 c -0.461,3.199 -4.326,2.308 -6.68,2.345 -8.667,0.136 -16.954,0.896 -24.299,1.021 -2.387,0.038 -5.142,-0.004 -7.055,-1.169 -0.609,-3.068 3.207,-2.934 6.351,-2.98 6.91,-0.101 16.989,0.041 24.953,-0.071 2.489,-0.036 5.2,-1.471 6.73,0.854 z"
-     id="path10"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /><path
-     d="m 7.7224149,49.808139 c -1.757,0.34 -2.655,1.376 -4.462,1.029 -8.243,-1.576 1.262,-14.199 5.301,-8.719 1.7240001,2.337 0.092,4.936 -0.839,7.69 z"
-     id="path12"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /><path
-     d="m 56.282415,45.529139 c -2.872,2.605 -8.406,1.172 -13.733,1.494 -5.927,0.357 -11.719,1.056 -17.256,1.229 -2.261,0.07 -4.696,1.076 -6.097,-1.184 0.058,-3.761 3.461,-2.534 6.037,-2.653 3.955,-0.185 8.578,-0.502 13.426,-0.53 6.318,-0.042 14.011,-2.457 17.623,1.644 z"
-     id="path14"
-     inkscape:connector-curvature="0"
-     style="clip-rule:evenodd;fill-rule:evenodd" /></svg>
-);
+export default CV;

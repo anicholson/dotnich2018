@@ -2,28 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Writing } from './icons';
+import { Writing, Bio, CV, Contact } from './icons';
 
 class App extends Component {
   render() {
+    const size = 124;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-        <div>
-          <Writing size={124} />  
+            <div>
+	    <ul>
+            <li><Writing size={size} /></li>
+	    <li><Bio size={size} /></li>
+	    <li><CV size={size} /></li>
+	    <li><Contact size={size} /></li>
+	    </ul>
         </div>
       </div>
     );

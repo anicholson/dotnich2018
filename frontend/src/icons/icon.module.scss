@@ -1,0 +1,36 @@
+@import "../colors.module.scss";
+
+.icon {
+  cursor: pointer;
+
+  .mainColor {
+    fill: $mud;
+  }
+
+  .background {
+      fill: $dust;
+      stroke: $concrete;
+  }
+
+  .border {
+    border: solid 1px $concrete;
+    box-shadow: 1px 2px 4px 0 $custard;
+  }
+
+  .highlight {
+    fill: $custard;
+  }
+
+  &:hover {
+  
+  .highlight {
+    fill: $cinnamon;
+  }
+
+  .mainColor {
+      fill: $cinnamon;
+  }
+
+  }
+
+}

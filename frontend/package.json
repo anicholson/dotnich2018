@@ -111,5 +111,9 @@
       "jsx",
       "node"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "postcss-import": "^11.1.0"
   }
 }

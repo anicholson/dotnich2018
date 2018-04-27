@@ -32,6 +32,7 @@ const postCSSLoaderOptions = {
   ident: 'postcss',
   plugins: () => [
     require('postcss-flexbugs-fixes'),
+    require('postcss-import'),
     autoprefixer({
       flexbox: 'no-2009',
     }),
