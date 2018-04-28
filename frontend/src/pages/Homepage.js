@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import "./App.scss";
+import React from "react";
 
-import SiteNav from "./site_nav";
-import Headline from "./headline";
+import SiteNav from "../site_nav";
+import Headline from "../headline";
 
 const Homepage = props => {
   let size = 124;
