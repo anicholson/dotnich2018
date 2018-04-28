@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Writing, Bio, CV, Contact } from "../icons";
+import { Link } from "react-router-dom";
 
 import styles from "./site_nav.module.scss";
 
@@ -10,16 +11,24 @@ class SiteNav extends Component {
       <div className={styles.container}>
         <ul className={styles.siteNav}>
           <li>
-            <Writing size={s} />
+            <Link to="/writing">
+              <Writing size={s} />
+            </Link>
           </li>
           <li>
-            <Bio size={s} />
+            <Link to="/bio">
+              <Bio size={s} />
+            </Link>
           </li>
           <li>
-            <CV size={s} />
+            <Link to="/cv">
+              <CV size={s} />
+            </Link>
           </li>
           <li>
-            <Contact size={s} />
+            <Link to="/contact">
+              <Contact size={s} />
+            </Link>
           </li>
         </ul>
       </div>
