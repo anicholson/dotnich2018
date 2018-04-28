@@ -1,3 +1,3 @@
-import Headline from './headline';
+import Headline from "./headline";
 
 export default Headline;
