@@ -4,7 +4,7 @@ import MarkdownPage from "./MarkdownPage";
 class ContactPage extends React.Component {
   constructor(props) {
     super(props);
-    this.content = "# Get in Touch";
+    this.content = "# Get in Touch\n\nLOL Paragraph stuff";
   }
 
   render() {
