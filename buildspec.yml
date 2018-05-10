@@ -24,9 +24,9 @@ phases:
 #      - command
 artifacts:
   files:
-    - *
-  discard-paths: no
-  base-directory: frontend/build
+    - build/*
+  discard-paths: yes
+  base-directory: frontend
 cache:
   paths:
     - frontend/node_modules
