@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sudo apt-get update
 sudo apt-get install -y apt-transport-https curl
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
