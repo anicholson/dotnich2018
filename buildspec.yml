@@ -24,7 +24,7 @@ phases:
 #      - command
 artifacts:
   files:
-    - frontend/build/**/*
+    - *
   discard-paths: no
   base-directory: frontend/build
 cache:
