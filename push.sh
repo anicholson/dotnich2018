@@ -2,4 +2,4 @@
 
 cd frontend/build
 
-aws s3 sync $(pwd) s3://$DESTINATION_BUCKET/ --include "*"
+aws s3 sync $(pwd) s3://andrewdotni.ch/ --include "*"
