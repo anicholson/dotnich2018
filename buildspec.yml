@@ -18,10 +18,9 @@ phases:
   build:
     commands:
       - ./build.sh
-#  post_build:
-#    commands:
-#      - command
-#      - command
+  post_build:
+    commands:
+      - ./push.sh
 artifacts:
   files:
     - "**/*"
