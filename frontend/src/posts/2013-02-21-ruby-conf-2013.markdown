@@ -1,0 +1,16 @@
+---
+comments: true
+layout: post
+title: "require 'ruby_conf_2013'"
+date: 2013-02-21 08:57
+comments: true
+published: false
+categories:
+ - sofware
+ - conferences
+ - work
+ - ruby
+---
+
+Today and tomorrow, I'm attending RubyConf AU with my colleages from [Locomote](http://www.locomote.com.au). If anything sticks out from my notes, I'll try and edit it and put it up, but it's going to be a very busy few days!
+x

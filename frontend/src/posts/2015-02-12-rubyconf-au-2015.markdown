@@ -1,0 +1,142 @@
+---
+layout: post
+title: "RubyConf AU 2015"
+date: 2015-02-12 21:40:21 +1100
+comments: true
+categories: 
+  - conferences
+  - rubyconf_au
+  - ruby
+---
+
+February 2015 saw Federation Square host the latest instalment of [RubyConf AU][1], one of the best tech conferences in Australia. Over 450 Ruby developers from Australia, New Zealand & beyond gathered for 4 days of workshops, talks, and social activities.
+
+<img src='/images/rubyconf_au_15_conference.jpg' />
+
+# …in 50 words or less
+
+We’re growing up, Ruby community – but it’s okay! Ruby isn’t great just because it’s new, so let’s not freak out when other New Hotnesses™ come. If we [learn from those who’ve come before](#on_the_shoulders_of_giants), [embrace new ideas](#embrace_new_ideas), and [welcome new & different voices](#diversity), we’ll both [survive and thrive](#do_all_the_cool_things)!
+
+# …in tweets
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/RubyConf_AU?src=hash">#RubyConf_AU</a> may very well be my favorite conference ever. Everything was perfect, great talks, wonderful people… So good.</p>&mdash; Coraline Ada Ehmke (@CoralineAda) <a href="https://twitter.com/CoralineAda/status/563938042365239296">February 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/rubyconf_au?src=hash">#rubyconf_au</a> thoughts: we&#39;re a creative, welcoming community. We make things.&#10;&#10;So was (is?) Perl. So is JavaScript.</p>&mdash; Michael Pearson News (@mipearson) <a href="https://twitter.com/mipearson/status/564615942324248577">February 9, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p>What has been SUPER awesome about <a href="https://twitter.com/hashtag/RubyConf_AU?src=hash">#RubyConf_AU</a> is that despite not being a Rubyist, I got so much out of it &amp; felt so welcome. Thanks all &lt;3</p>&mdash; Liam Esler (@liamesler) <a href="https://twitter.com/liamesler/status/564033026695249920">February 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<img src='/images/collis.jpg' />
+
+# …the talks!
+
+I only attended the talks, so I can’t comment on the workshops, although every attendee I spoke to enjoyed them. The 2 days of talks only had the single track, but I think they fell neatly into a few distinct categories. Here are my highlights from each :) <s>They will be available on [Eventer][7] soon, so I’ll update these with links when that happens.</s>
+
+**Update: The talks are now available, so [go and watch them all!][8]**
+
+## <a name="on_the_shoulders_of_giants"></a>“Hey, there’s all this stuff people have known for a while!”
+
+As Ruby & Rails get older, we’re using it to solve bigger problems (good!) and deal with [Eldritchian abominations][2] created by past us (bad!).
+
+### [Loving Legacy Code – Keith Pitty](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/loving-legacy-code-by-keith-pitty-1718)
+
+Got an old, hairy codebase to look after? Keith has some gentle suggestions for getting along with it.
+ 
+### [A Case for Use Cases – Shevaun Coker](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/a-case-for-use-cases-by-shevaun-coker-1734)
+
+or, How Neither _Thomas the Tank Engine_ Nor Plus Sizes Are The Answer.
+
+### [Prefactoring: Getting it (Closer to) Right the First Time – Coraline Ada Ehmke](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/pre-factoring-getting-it-closer-to-right-the-first-time-by-coraline-ada-ehmke-1726) & [Service-Oriented Disasters – Rachel Meyers](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/service-oriented-disasters-by-rachel-myers-1732)
+
+Two great talks on traps & pitfalls to avoid when breaking apps into smaller pieces. The highlights of a strong SOA tinge through the technical talks.
+
+## <a name="do_all_the_cool_things"></a>“What cool things are Ruby people doing now?”
+
+Like refreshing palate cleansers on a degustation menu, these were sprinkled through at just the right times. Real cool things being done by real cool people.
+
+### [Principles of Play – Linda Liukas](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/principles-of-play-by-linda-liukas-1717)
+
+This was a wonderful talk. Children are great because they haven’t learned about what they “shouldn’t do” yet. I will be [buying her book][6] when I become a Dad, regardless of whether I have a son or a daughter :)
+
+### [Sweaters as a Service – Amy Wibowo](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/sweaters-as-a-service-by-amy-wibowo-1725)
+
+Amy and her team introduced Ruby to a 1980s knitting machine, and helped them to knit pretty pictures together.
+
+### [Saving the World (Literally!) with Ruby – Sean Marcia](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/saving-the-world-literally-with-ruby-by-sean-marcia-1721)
+
+Big world problems don’t _only_ need big solutions. Sometimes little projects can be a big help in themselves. Sean used Raspberry Pis and Ruby to give the plight of honeybees a voice.
+
+### [Programming as Performance – Joseph Wilks](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/programming-as-performance-by-joseph-wilk-1733)
+
+Live coding can be just as compelling as any other live art form. Joseph gave us a peek into the tools that exist for live coding music, and then gave a stunning demo of what’s possible with Clojure + Emacs.
+
+<img src='/images/repl_electric.jpg' />
+
+## <a name="embrace_new_ideas"></a>“What new stuff could make Ruby better?”
+
+A great mixture of humanity, high–level maths, and where our language might go in future.
+
+### [What is a Rubyist? – Steve Klabnik](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/what-is-a-rubyist-by-steve-klabnik-1728)
+
+Plato, Process Philosophy, and a gentle prod to look outside our own bubble. Presented from a Moleskine, because hipster NY :)
+
+### [Consider Static Typing – Tom Stuart](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/consider-static-typing-by-tom-stuart-1720)
+
+Ruby’s dynamically typed, and attracts people who like dynamic typing. Tom wonders whether we can’t have our cake and eat it too?
+
+### [Towards a Higher-Level Language – Erik Michaels-Ober](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/towards-a-higher-level-language-by-erik-michaels-ober-1746)
+
+Ruby’s a very high-level language. But while people are trying to “make a [better][4] [C][3] or [Lisp][5]”, nobody’s really trying to build a better Ruby. Why not?
+
+## <a name=“diversity”></a>“How can we be make ‘us’ better?”
+
+We can and should become more rounded individuals, and there are lots of paths! Trying more things, listening to others and stepping out of our comfort zones will all get us there.
+
+### [Side Projects & Startups – Collis Ta’eed](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/sideprojects-and-startups-by-collis-ta-eed-1723)
+Startups are hard. Build side projects instead. _Present You_ won’t be under so much pressure, and _Future You_ will have a richer set of experiences to draw on. Plus side projects don’t have to justify their existence!
+
+### [Feel like a better developer – Joss Paling](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/feeling-like-a-better-developer-aka-overcoming-impostor-syndrome-by-joss-paling-1729)
+<blockquote class="twitter-tweet" lang="en"><p>I am not as crap as I think. <a href="https://twitter.com/hashtag/rubyconf_au?src=hash">#rubyconf_au</a></p>&mdash; Andy Nicholson (@andrewdotnich) <a href="https://twitter.com/andrewdotnich/status/563482419630579712">February 5, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### [Understanding Despair – John Dalton](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/understanding-despair-by-john-dalton-1736)
+
+A great talk on depression, and how we still suck at talking about it, understanding it, and giving ourselves a break.
+
+### [On Second Acts – John Barton](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/on-second-acts-by-john-barton-1727)
+
+or, You Can Do Post-Technical Things (and doing them will help the entire Ruby community). A call to arms for the more senior members of the community: If some of us who understand the benefits of Ruby don’t move into management, we’ll get managers who don’t and the community will suffer.
+
+# Other Observations
+
+<img src='/images/picnic.jpg' />
+
+* I loved the venue – the Edge Theatre is a stunning place and so central to everything! The only downside is that it only allowed for a single conference track. A few people were disappointed that there weren’t more “Ruby-centric” talks, and a single track probably explains most of why.
+
+* I liked the diversity of Social Activities. The organisers deliberately recognised that not everyone likes to go drinking at the end of every day. I thought the balance of other activities they provided catered for lots of different tastes. Well done!
+
+* I was pleased to meet a few *new* Rubyists at the conference. I feel like I’ve been on the fringes of the community for ages, and haven’t quite known how to “break in”, as it were. Meeting new recruits to our community gave me a chance to pay that welcome forward. 
+
+If you made it this far, well done. The conference was great, and Rubyists of any level should go next year and make it even better.
+
+<hr>
+<aside>
+Photo Credits:
+
+- [https://twitter.com/jimilaw/status/563113067676848128](https://twitter.com/jimilaw/status/563113067676848128)
+- [https://twitter.com/pat/status/563135596676141056](https://twitter.com/pat/status/563135596676141056)
+- [https://twitter.com/rubyconf_au/status/563967802239758336](https://twitter.com/rubyconf_au/status/563967802239758336)
+- [https://twitter.com/JonRowe/status/563532920447459328](https://twitter.com/JonRowe/status/563532920447459328)
+</aside>
+
+
+[1]: http://rubyconf.org.au/
+[2]: http://tvtropes.org/pmwiki/pmwiki.php/Main/EldritchAbomination
+[3]: http://golang.org/
+[4]: http://www.rust-lang.org/
+[5]: http://clojure.org/
+[6]: http://www.helloruby.com/
+[7]: http://eventer.com/
+[8]: https://rubyconf.eventer.com/rubyconf-australia-2015-1223

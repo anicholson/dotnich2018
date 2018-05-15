@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Books I'm Reading: August 2014"
+date: 2014-08-16 12:15:40 +1000
+comments: true
+categories: 
+  - books
+  - reviews
+---
+I've recently started reading more, thanks largely to borrowing a friend's kindle when on holidays for a month in June of this year. I'm glad I have, because there's something great about getting immersed in a story - and that's as true of non-fiction as it is for fiction.
+
+Here's what I'm reading right now:
+
+### [At Home][at_home]
+#### Bill Bryson
+
+<figure style='margin-left:auto; margin-right:auto; width:40%'>
+<a href="http://www.amazon.com/gp/product/0767919394/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0767919394&linkCode=as2&tag=moremusi-20&linkId=J3W7YFX3IJMQVN7V"><img border="0" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0767919394&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=moremusi-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=moremusi-20&l=as2&o=1&a=0767919394" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+</figure>
+
+Bill seems to be incapable of writing short books, but I'm thoroughly enjoying his look into the "home" and its history. I'm particularly struck by how recent so many of the innovations we take for granted really are - and it gives me a little bit more gracious towards the digital natives who can't remember a world without iPhones.
+
+### [Start][start]
+#### Jon Acuff
+
+<figure style='margin-left:auto; margin-right:auto; width:40%'>
+<a href="http://www.amazon.com/gp/product/1937077594/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1937077594&linkCode=as2&tag=moremusi-20&linkId=DEE5V7NTJATEO3PB"><img border="0" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937077594&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=moremusi-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=moremusi-20&l=as2&o=1&a=1937077594" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</figure>
+
+This is a book full of home truths for Gen-Ys like me, who yearn to do work that matters but seem to have trouble working out how to get going. We've rejected the Greatest Generation's tendency to work one job for life, and bought our Boomer parents' encouragement that we could "be whatever we wanted". Couple that with internet celebrity culture giving people fame seemingly from nowhere, it's far too easy to get discouraged and discontented.
+
+Jon writes as someone just that little bit farther down the road than you, which gives his message some weight without it being "preachy". He is one of us, and he wants us all to do well. Don't pick it up without being prepared to do a little introspection, but I'm finding that being honest with the questions it's raising really helpful. 
+
+-----
+What are you reading right now?
+
+[at_home]: http://www.amazon.com/gp/product/0767919394/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0767919394&linkCode=as2&tag=moremusi-20&linkId=J3W7YFX3IJMQVN7V
+
+[start]: http://www.amazon.com/gp/product/1937077594/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1937077594&linkCode=as2&tag=moremusi-20&linkId=DEE5V7NTJATEO3PB
