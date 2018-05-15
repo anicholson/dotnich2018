@@ -33,6 +33,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "22.1.2",
     "loader-utils": "^1.1.0",
+    "localforage": "^1.7.1",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.10",
@@ -117,6 +118,8 @@
     ]
   },
   "devDependencies": {
+    "glob-fs": "^0.1.7",
+    "micromatch": "^3.1.10",
     "node-sass": "^4.9.0",
     "postcss-import": "^11.1.0"
   }
