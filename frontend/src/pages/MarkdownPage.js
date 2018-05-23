@@ -5,7 +5,13 @@ import { MarkdownRoot as root } from "../markdown/renderers";
 
 class MarkdownPage extends Component {
   render() {
-    return <Markdown source={this.props.input} renderers={{ root: root }} />;
+    return (
+      <Markdown
+        escapeHtml={false}
+        source={this.props.input}
+        renderers={{ root: root }}
+      />
+    );
   }
 }
 
