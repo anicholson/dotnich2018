@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Tech Talks: August 2014"
+date: 2014-08-20 11:28:17 +1000
+comments: true
+categories:
+  - ruby
+  - testing
+  - videos
+---
+
+I've recently been enjoying refreshing my Ruby testing & design skills, and these 3 talks have been excellent. They're not new talks; I've seen some of them before. It never hurts to be reminded about good design and good practices!
+
+### The Magic Tricks of Testing
+#### Sandi Metz
+<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/URSWYvyc42M?rel=0" frameborder="0" allowfullscreen></iframe>
+
+**Watch it because:** the rules for unit testing minimalism are actually kind of simple - we just need to remember them!
+
+### Yay! Mocks!
+#### Corey Haines
+<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/t430e6M5YAo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+**Watch it because:** Listen to your tests! If you're finding pain in your tests, it's a compelling reason to rethink your design. Also cats.
+
+### Refactoring from Good to Great
+#### Ben Orenstein
+<iframe width="853" height="480" src="//www.youtube-nocookie.com/embed/DC-pQPq0acs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+**Watch it because:** `vim` ninja! The entire talk is done inside `vim`. Highly practical, and good arguments for keeping your public interfaces understandable.

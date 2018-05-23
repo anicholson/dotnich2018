@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./icon.module.scss";
 
-console.log(styles);
-
 const Writing = ({ size }) => (
   <svg
     className={styles.icon}

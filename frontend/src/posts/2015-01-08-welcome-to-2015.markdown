@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Welcome to 2015"
+date: 2015-01-08 13:54:53 +1100
+comments: true
+categories:
+    - new year
+    - goals
+---
+Hi everyone!
+
+Another year has been and gone, and now 2015 extends before us as the Not Yet becomes the Has Been.
+
+I have a few goals this year:
+
+* Say ‘no’ to more, and finish the ‘yeses’
+* Build routine
+* Tell more stories, better.
+
+To achieve this, I’m limiting myself to the following <s>two</s>  three simple rules:
+
+> * You get **one project** a month.
+> * You **have to finish** that project within the month.
+> * **Tell the story** of that project, **good or bad**. “I just didn’t” makes a terrible story.
+
+Like an agile project, I’ll maintain a backlog of projects, and if I choose to prioritise them then well and good. But during the month, I’ll focus just on that project.
+
+Let’s see what happens :)
+
+## Projects
+
+1. Baby Sleep Monitor
+	* [Iteration 0][1]
+2. [Raspberry Pi-based MIDI Synthesiser][2]
+
+3. [Kiva Snapshot][3]
+
+[1]: /blog/2015/01/30/baby-sleep-monitor/
+[2]: /blog/2015/02/28/midi-synth-with-raspberry-p/
+[3]: /blog/2015/04/30/kiva-snapshot/

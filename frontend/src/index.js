@@ -1,12 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Routes from "./routes";
+import PostsRepository, { defaultConfig } from "./PostsRepository";
 
 let root = document.getElementById("root");
+
+let postsRepo = new PostsRepository(defaultConfig);
+
+postsRepo.count().then(postCount => {
+  console.info(postCount);
+  if (postCount <= 0) {
+    postsRepo.populate();
+  }
+});
 
 let app = (
   <Router>
