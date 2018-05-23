@@ -11,9 +11,12 @@ let root = document.getElementById("root");
 
 let postsRepo = new PostsRepository(defaultConfig);
 
-if (postsRepo.count() <= 0) {
-  postsRepo.populate();
-}
+postsRepo.count().then(postCount => {
+  console.info(postCount);
+  if (postCount <= 0) {
+    postsRepo.populate();
+  }
+});
 
 let app = (
   <Router>
