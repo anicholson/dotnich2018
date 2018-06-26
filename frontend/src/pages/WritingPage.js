@@ -1,6 +1,6 @@
 import React from "react";
 import PostsRepository, { defaultConfig } from "../PostsRepository";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PropsRoute from "../propsRoute";
 import MarkdownPage from "./MarkdownPage";
 
@@ -40,7 +40,9 @@ class Index extends React.PureComponent {
 
     return (
       <div>
-        <h1>Hi.</h1>
+            <h1>Hi.</h1>
+	    <p>I love words, and sometimes I event collect them and put them on the Internet.
+	    <br />May you find something that resonates, challenges, or informs you :)</p>
         {posts}
       </div>
     );
@@ -62,7 +64,13 @@ class WritingPage extends React.Component {
 
         return Promise.all(posts);
       })
-      .then(posts => {
+	  .then(posts => {
+	      posts.sort((a,b) => {
+		  let aDate = Date.parse(a.date);
+		  let bDate = Date.parse(b.date);
+
+		  return bDate - aDate;
+	      })
         this.setState({ posts: posts });
       });
   }
