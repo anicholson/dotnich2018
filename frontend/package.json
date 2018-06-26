@@ -48,6 +48,7 @@
     "react-router-dom": "^4.2.2",
     "resolve": "1.6.0",
     "sass-loader": "7.0.0",
+    "storybook": "^1.0.0",
     "style-loader": "0.19.1",
     "svgr": "1.8.1",
     "sw-precache-webpack-plugin": "0.11.4",
@@ -63,7 +64,9 @@
     "start": "node scripts/start.js",
     "watch": "node scripts/watch.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "browserslist": {
     "development": [
@@ -128,6 +131,9 @@
     "postcss-import": "^11.1.0",
     "prettier": "^1.12.1",
     "sinon": "^5.0.7",
-    "yaml-front-matter": "^4.0.0"
+    "yaml-front-matter": "^4.0.0",
+    "@storybook/react": "^3.4.8",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8"
   }
 }
