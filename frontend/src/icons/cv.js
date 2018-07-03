@@ -1,5 +1,8 @@
 import React from "react";
-import styles from "./icon.module.scss";
+//import styles from "./icon.module.scss";
+
+const styles = {};
+
 const CV = ({ size }) => {
   let oldSizeRatio = size / 134.0;
   return (

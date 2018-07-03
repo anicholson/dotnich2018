@@ -1,9 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import ReactDOM from "react-dom";
+import { h, render, Component } from "preact"
+import { Router } from "react-router-dom"
 import "./index.css";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+//import * as serviceWorker from "./serviceWorker";
 import Routes from "./routes";
 import PostsRepository, { defaultConfig } from "./PostsRepository";
 
@@ -26,9 +25,9 @@ let app = (
   </Router>
 );
 
-ReactDOM.render(app, root);
+render(app, root);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.register();
+//serviceWorker.register();

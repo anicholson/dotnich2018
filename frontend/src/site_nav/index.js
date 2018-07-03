@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Writing, Bio, CV, Contact } from "../icons";
 import { Link } from "react-router-dom";
 
-import styles from "./site_nav.module.scss";
+//import styles from "./site_nav.module.scss";
+
+const styles = {}
 
 class SiteNav extends Component {
   render() {

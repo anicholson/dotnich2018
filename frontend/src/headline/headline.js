@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./headline.module.scss";
+//import styles from "./headline.module.scss";
+
+const styles = {}
 
 class Headline extends React.Component {
   render() {

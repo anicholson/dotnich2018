@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./icon.module.scss";
+//import styles from "./icon.module.scss";
+
+const styles = {}
 
 const Bio = ({ size }) => (
   <svg
