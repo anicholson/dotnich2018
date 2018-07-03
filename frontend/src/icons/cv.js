@@ -1,4 +1,4 @@
-import React from "react";
+import { h } from 'preact';
 //import styles from "./icon.module.scss";
 
 const styles = {};

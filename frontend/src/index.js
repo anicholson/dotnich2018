@@ -1,12 +1,9 @@
 import { h, render, Component } from "preact"
-import { Router } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import "./index.css";
 import App from "./App";
-//import * as serviceWorker from "./serviceWorker";
 import Routes from "./routes";
 import PostsRepository, { defaultConfig } from "./PostsRepository";
-
-let root = document.getElementById("root");
 
 let postsRepo = new PostsRepository(defaultConfig);
 
@@ -25,9 +22,11 @@ let app = (
   </Router>
 );
 
-render(app, root);
+const init = () => {
+	let root = render(app, document.getElementById("root"), root);
+}
+init()
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-//serviceWorker.register();
+if(module.hot) module.hot.accept('./app', init);
+
+require('offline-plugin/runtime').install()

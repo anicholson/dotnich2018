@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { h, Component } from "preact";
 import { Writing, Bio, CV, Contact } from "../icons";
 import { Link } from "react-router-dom";
 

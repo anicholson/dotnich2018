@@ -1,9 +1,5 @@
-import React, { Component } from "react";
+import { h } from 'preact'
 
-class App extends Component {
-  render() {
-    return <div className="App">{this.props.children}</div>;
-  }
-}
+const App = ({children}) => (<div className="App">{children}</div>)
 
 export default App;
