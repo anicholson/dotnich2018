@@ -2,6 +2,8 @@ import { createRenderer as createFelaRenderer } from 'fela';
 import webPreset from 'fela-preset-web';
 import merge from 'lodash/fp/merge';
 
+import colors from './colors'
+
 const [extend, embedded, addVendorPrefixes, resolveFallbackValues, orderLVHA,other ] = webPreset
 
 const defaultPlugins = [ embedded, addVendorPrefixes ]
@@ -30,8 +32,6 @@ export default function createRenderer(options = {}) {
 }
 
 
-
-
 @font-face {
     font-family: 'Cooper Hewitt';
     src: url('src/fonts/cooperhewitt-bolditalic-webfont.woff2') format('woff2'),
@@ -40,8 +40,6 @@ export default function createRenderer(options = {}) {
     font-style: italic;
 
 }
-
-
 
 
 @font-face {
@@ -54,8 +52,6 @@ export default function createRenderer(options = {}) {
 }
 
 
-
-
 @font-face {
     font-family: 'Cooper Hewitt';
     src: url('src/fonts/cooperhewitt-bookitalic-webfont.woff2') format('woff2'),
@@ -66,8 +62,6 @@ export default function createRenderer(options = {}) {
 }
 
 
-
-
 @font-face {
     font-family: 'Cooper Hewitt';
     src: url('src/fonts/cooperhewitt-semibold-webfont.woff2') format('woff2'),
@@ -76,8 +70,6 @@ export default function createRenderer(options = {}) {
     font-style: normal;
 
 }
-
-
 
 
 @font-face {
@@ -96,6 +88,7 @@ html {
 
 body {
   font-family: "Cooper Hewitt", "Helvetica Neue", Arial, sans-serif;
+  background-color: ${colors.dust};
 }
 
 `);
