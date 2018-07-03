@@ -1,5 +1,5 @@
-import { h, render, Component } from "preact"
-import { BrowserRouter as Router } from "react-router-dom"
+import { h, render, Component } from "preact";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Routes from "./routes";
@@ -15,18 +15,19 @@ postsRepo.count().then(postCount => {
 });
 
 let app = (
-  <Router>
-    <App>
-      <Routes />
-    </App>
-  </Router>
+	<Router>
+          <App>
+	    <Routes />
+	  </App>
+	</Router>
 );
 
 const init = () => {
 	let root = render(app, document.getElementById("root"), root);
 }
+
 init()
 
-if(module.hot) module.hot.accept('./app', init);
+if(module.hot) module.hot.accept('./App', init);
 
 require('offline-plugin/runtime').install()
