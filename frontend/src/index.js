@@ -1,5 +1,9 @@
 import { h, render, Component } from "preact";
 import { BrowserRouter as Router } from "react-router-dom";
+
+import { createRenderer } from 'fela';
+import { Provider } from 'preact-fela';
+
 import "./index.css";
 import App from "./App";
 import Routes from "./routes";
@@ -14,11 +18,15 @@ postsRepo.count().then(postCount => {
   }
 });
 
+const renderer = createRenderer();
+
 let app = (
 	<Router>
-          <App>
-	    <Routes />
-	  </App>
+	  <Provider renderer={renderer}>
+            <App>
+	      <Routes />
+	    </App>
+	  </Provider>
 	</Router>
 );
 

@@ -1,5 +1,10 @@
-import { h } from 'preact'
+import { h } from 'preact';
+import { createComponent } from 'preact-fela';
 
-const App = ({children}) => (<div className="App">{children}</div>)
+const styleRules = () => ({
+
+})
+
+const App = createComponent(styleRules)
 
 export default App;
