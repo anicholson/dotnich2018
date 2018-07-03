@@ -88,7 +88,7 @@ html {
 
 body {
   font-family: "Cooper Hewitt", "Helvetica Neue", Arial, sans-serif;
-  background-color: ${colors.dust};
+  background-color: ${colors.white};
 }
 
 `);

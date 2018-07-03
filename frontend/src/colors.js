@@ -5,4 +5,5 @@ export default {
   dust: '#AAA7A2',
   blue: 'blue',
   cinnamon: '#763300',
+  white: '#FFF9F4'
 }
