@@ -2,16 +2,27 @@ import { h, Component } from "preact";
 import { Writing, Bio, CV, Contact } from "../icons";
 import { Link } from "react-router-dom";
 
-//import styles from "./site_nav.module.scss";
+import { createComponent } from 'preact-fela';
 
-const styles = {}
+const containerRules = _ => ({
+	width: '135px',
+	margin: '0 auto'
+})
+
+const navRules = _ => ({
+	listStyle: 'none',
+	padding: 0
+})
+
+const Container = createComponent(containerRules, 'div')
+const Nav = createComponent(navRules, 'ul')
 
 class SiteNav extends Component {
   render() {
     let s = this.props.size;
     return (
-      <div className={styles.container}>
-        <ul className={styles.siteNav}>
+      <Container>
+        <Nav>
           <li>
             <Link to="/writing">
               <Writing size={s} />
@@ -32,8 +43,8 @@ class SiteNav extends Component {
               <Contact size={s} />
             </Link>
           </li>
-        </ul>
-      </div>
+        </Nav>
+      </Container>
     );
   }
 }
