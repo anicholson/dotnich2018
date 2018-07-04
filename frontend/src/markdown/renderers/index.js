@@ -1,6 +1,8 @@
 import React from "react";
 
-import styles from "../markdown_styling.module.scss";
+//import styles from "../markdown_styling.module.scss";
+
+const styles= {}
 
 class MarkdownRoot extends React.PureComponent {
   render() {

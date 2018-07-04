@@ -6,17 +6,18 @@ import {
 //  ContactPage,
 //  Bio,
 //  CV,
-//  WritingPage,
+  WritingPage,
 //  SampleMarkdownPage
 } from "./pages";
 
-const Routes = (props) => (
+console.log("OI", WritingPage);
+
+const Routes = () => (
       <div>
         {/*<Route path="/bio" component={Bio} />
         <Route path="/contact" component={ContactPage} />
-        <Route path="/cv" component={CV} />
+        <Route path="/cv" component={CV} />*/}
         <Route path="/writing" component={WritingPage} />
-	*/}
         <Route exact path="/" component={Homepage} />
 		{/*<Route exact path="/design" component={SampleMarkdownPage} />*/}
       </div>

@@ -1,13 +1,14 @@
-import React from "react";
+import { h, Component } from 'preact';
 import PostsRepository, { defaultConfig } from "../PostsRepository";
 import { Link } from "react-router-dom";
 import PropsRoute from "../propsRoute";
 import MarkdownPage from "./MarkdownPage";
 
-class Post extends React.PureComponent {
+class Post extends Component {
   render() {
     let post = this.props.post;
     let content = post["__content"];
+    alert('YAS')
     return (
       <article>
         <h1>{post.title}</h1>
@@ -17,7 +18,7 @@ class Post extends React.PureComponent {
   }
 }
 
-class PostDescription extends React.PureComponent {
+class PostDescription extends Component {
   render() {
     let post = this.props.post;
     return (
@@ -31,7 +32,7 @@ class PostDescription extends React.PureComponent {
   }
 }
 
-class Index extends React.PureComponent {
+class Index extends Component {
   render() {
     let base = this.props.match.path;
     let posts = this.props.posts.map(post => (
@@ -49,7 +50,7 @@ class Index extends React.PureComponent {
   }
 }
 
-class WritingPage extends React.Component {
+class WritingPage extends Component {
   constructor(props) {
     super(props);
     this.repo = new PostsRepository(defaultConfig);

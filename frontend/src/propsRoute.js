@@ -1,9 +1,9 @@
-import React from "react";
+import { h } from 'preact';
 import { Route } from "react-router-dom";
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
-  return React.createElement(component, finalProps);
+  return h(component, finalProps);
 };
 
 const PropsRoute = ({ component, ...rest }) => {
