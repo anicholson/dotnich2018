@@ -4,15 +4,9 @@ import merge from 'lodash/fp/merge';
 
 import colors from './colors'
 
-const [extend, embedded, addVendorPrefixes, resolveFallbackValues, orderLVHA,other ] = webPreset
-
-const defaultPlugins = [ embedded, addVendorPrefixes ]
-
 export default function createRenderer(options = {}) {
-	console.info("web Preset", embedded);
   const rendererOptions = merge(
 	  {
-		  plugins: defaultPlugins
 	  },
 	  options
   )
