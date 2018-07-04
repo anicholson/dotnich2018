@@ -1,9 +1,9 @@
 import { h } from 'preact';
-//import styles from "./icon.module.scss";
+import { connect } from 'preact-fela';
 
-const styles = {}
+import rules from './iconStyles';
 
-const Bio = ({ size }) => (
+const Bio = ({ styles, size }) => (
   <svg
     className={styles.icon}
     xmlns="http://www.w3.org/2000/svg"
@@ -56,4 +56,4 @@ const Bio = ({ size }) => (
   </svg>
 );
 
-export default Bio;
+export default connect(rules)(Bio);
