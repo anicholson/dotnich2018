@@ -5,6 +5,8 @@ import autoprefixer from 'autoprefixer';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import OfflinePlugin from 'offline-plugin';
 import path from 'path';
+
+import PostEnumeratorPlugin from './plugins/PostEnumeratorPlugin';
 const ENV = process.env.NODE_ENV || 'development';
 
 const CSS_MAPS = ENV!=='production';
@@ -116,6 +118,7 @@ module.exports = {
   },
   plugins: ([
     new webpack.NoEmitOnErrorsPlugin(),
+    new PostEnumeratorPlugin({ postsPath: './src/posts' }),
     new ExtractTextPlugin({
       filename: 'style.css',
       allChunks: true,
