@@ -24,8 +24,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-bold-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -34,8 +34,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-bolditalic-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-bolditalic-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-bolditalic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 
@@ -44,8 +44,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-book-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-book-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-book-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -54,8 +54,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-bookitalic-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-bookitalic-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-bookitalic-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-bookitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 
@@ -64,8 +64,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-semibold-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-semibold-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-semibold-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 
@@ -74,8 +74,8 @@ export default function createRenderer(options = {}) {
 
 @font-face {
     font-family: 'Cooper Hewitt';
-    src: url('src/fonts/cooperhewitt-semibolditalic-webfont.woff2') format('woff2'),
-         url('src/fonts/cooperhewitt-semibolditalic-webfont.woff') format('woff');
+    src: url('/fonts/cooperhewitt-semibolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/cooperhewitt-semibolditalic-webfont.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 
