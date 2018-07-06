@@ -15,6 +15,13 @@ export default function createRenderer(options = {}) {
 
 	renderer.renderStatic(`
 
+@font-face {
+    font-family: 'Born';
+    src: url('/fonts/Born.otf') format('otf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face {
     font-family: 'Cooper Hewitt';
@@ -76,8 +83,8 @@ export default function createRenderer(options = {}) {
 }
 
 html {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1em;
+  line-height: 1.45;
 }
 
 body {
