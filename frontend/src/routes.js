@@ -4,18 +4,17 @@ import { Route } from "react-router-dom";
 import {
   Homepage,
 //  ContactPage,
-//  Bio,
+  Bio,
 //  CV,
   WritingPage,
 //  SampleMarkdownPage
 } from "./pages";
 
-console.log("OI", WritingPage);
 
 const Routes = () => (
       <div>
-        {/*<Route path="/bio" component={Bio} />
-        <Route path="/contact" component={ContactPage} />
+        <Route path="/bio" component={Bio} />
+    {/*<Route path="/contact" component={ContactPage} />
         <Route path="/cv" component={CV} />*/}
         <Route path="/writing" component={WritingPage} />
         <Route exact path="/" component={Homepage} />

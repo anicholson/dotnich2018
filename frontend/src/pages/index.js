@@ -1,6 +1,6 @@
 import Homepage from "./Homepage";
 //import ContactPage from "./ContactPage";
-//import Bio from "./Bio";
+import Bio from "./Bio";
 //import CV from "./CV";
 import WritingPage from "./WritingPage";
 
@@ -8,4 +8,4 @@ import WritingPage from "./WritingPage";
 
 //export { Homepage, ContactPage, Bio, CV, WritingPage, SampleMarkdownPage };
 
-export { Homepage, WritingPage }
+export { Homepage, Bio, WritingPage }
