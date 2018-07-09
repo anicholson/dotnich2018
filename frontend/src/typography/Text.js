@@ -7,12 +7,12 @@ const commonRules = {
 
 const P = createComponentWithProxy(() => ({
   ...commonRules,
-  marginBottom: '1.3rem'
+  marginBottom: '1.3em'
 }), 'p')
 
 const Small = createComponentWithProxy(() => ({
   ...commonRules,
-  fontSize: '0.75rem'
+  fontSize: '0.75em'
 }), 'small')
 
 export { P, Small }

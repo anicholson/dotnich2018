@@ -1,9 +1,10 @@
 import { h, Component } from 'preact';
+import { Page } from './Page';
 import { H1, P } from '../typography';
 
 
 const Bio = () => (
-  <article>
+  <Page>
     <H1>pr&eacute;cis</H1>
 
     <P>Hi! I&rsquo;m a 30-year-old software developer from Melbourne, Australia. Please call me Andy :)</P>
@@ -29,7 +30,7 @@ const Bio = () => (
       <li><P>I play piano, harmonica, and am teaching myself to play <a href="http://marcodi.com/">this strange contraption</a>!</P></li>
       </ul>
 
-      </article>
+      </Page>
 
       );
 

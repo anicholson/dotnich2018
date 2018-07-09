@@ -83,11 +83,11 @@ export default function createRenderer(options = {}) {
 }
 
 html {
-  font-size: 1em;
   line-height: 1.45;
 }
 
 body {
+  font-size: calc( 16px + ( 22 - 16 ) * ( ( 100vw - 600px ) / ( 1400 - 600 )));
   font-family: "Cooper Hewitt", "Helvetica Neue", Arial, sans-serif;
   background-color: ${colors.white};
 }
