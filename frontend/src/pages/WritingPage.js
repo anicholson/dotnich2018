@@ -1,19 +1,22 @@
 import { h, Component } from 'preact';
 import PostsRepository, { defaultConfig } from "../PostsRepository";
 import { Link } from "react-router-dom";
+
+import { Page } from './Page';
 import PropsRoute from "../propsRoute";
 import MarkdownPage from "./MarkdownPage";
+import { H1, H4, P } from '../typography';
 
 class Post extends Component {
   render() {
     let post = this.props.post;
     let content = post["__content"];
-    alert('YAS')
+
     return (
-      <article>
-        <h1>{post.title}</h1>
+      <Page>
+        <H1>{post.title}</H1>
         <MarkdownPage input={content} />
-      </article>
+      </Page>
     );
   }
 }
@@ -24,8 +27,8 @@ class PostDescription extends Component {
     return (
       <Link to={`${this.props.base}/${post.hash}`}>
         <div data-post-id={post.hash}>
-          <h2>{post.title}</h2>
-          <p>{JSON.stringify(post.keys)}</p>
+          <H4>{post.title}</H4>
+          <P>{JSON.stringify(post.keys)}</P>
         </div>
       </Link>
     );
@@ -40,12 +43,12 @@ class Index extends Component {
     ));
 
     return (
-      <div>
-            <h1>Hi.</h1>
-	    <p>I love words, and sometimes I event collect them and put them on the Internet.
-	    <br />May you find something that resonates, challenges, or informs you :)</p>
-        {posts}
-      </div>
+      <Page>
+        <H1>Hi.</H1>
+	      <P>I love words, and sometimes I event collect them and put them on the Internet.
+	      <br />May you find something that resonates, challenges, or informs you :)</P>
+      {posts}
+    </Page>
     );
   }
 }
@@ -92,9 +95,7 @@ class WritingPage extends Component {
 
     if (showIndex) {
       return (
-        <div>
           <Index match={this.props.match} posts={this.state.posts} />
-        </div>
       );
     } else {
       return <div>{routes}</div>;
