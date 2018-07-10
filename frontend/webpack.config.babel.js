@@ -111,7 +111,7 @@ module.exports = {
         use: 'raw-loader'
       },
       {
-        test: /\.(svg|woff2?|ttf|eot|jpe?g|png|gif)(\?.*)?$/i,
+        test: /\.(svg|woff2?|ttf|eot|otf|jpe?g|png|gif)(\?.*)?$/i,
         use: ENV==='production' ? 'file-loader' : 'url-loader'
       }
     ]
