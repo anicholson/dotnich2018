@@ -1,0 +1,19 @@
+name: backend
+version: 0.1.0
+
+# authors:
+#   - name <email@example.com>
+
+# description: |
+#   Short description of backend
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    version: "> 0.20"
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+# license: MIT
