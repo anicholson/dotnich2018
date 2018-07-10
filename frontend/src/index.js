@@ -6,6 +6,7 @@ import 'preact/devtools';
 import createRenderer from './felaRenderer';
 
 import "./index.css";
+
 import App from "./App";
 import Routes from "./routes";
 import PostsRepository, { defaultConfig } from "./PostsRepository";
