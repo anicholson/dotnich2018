@@ -1,6 +1,9 @@
-import React from "react";
-import styles from "./icon.module.scss";
-const CV = ({ size }) => {
+import { h } from 'preact';
+import { connect } from 'preact-fela';
+
+import rules from './iconStyles';
+
+const CV = ({ styles, size }) => {
   let oldSizeRatio = size / 134.0;
   return (
     <svg
@@ -12,7 +15,8 @@ const CV = ({ size }) => {
       viewBox={`0 0 ${size} ${size}`}
     >
       <defs>
-        <circle
+      <circle
+    className={styles.background}
           id="cv_b"
           cx={64 * oldSizeRatio}
           cy={64 * oldSizeRatio}
@@ -71,4 +75,4 @@ const CV = ({ size }) => {
   );
 };
 
-export default CV;
+export default connect(rules)(CV);

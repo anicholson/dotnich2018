@@ -1,13 +1,14 @@
-import React from "react";
+import { h, render, Component } from "preact";
 import { BrowserRouter as Router } from "react-router-dom";
-import ReactDOM from "react-dom";
+import { Provider } from 'preact-fela';
+import 'preact/devtools';
+
+import createRenderer from './felaRenderer';
+
 import "./index.css";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 import Routes from "./routes";
 import PostsRepository, { defaultConfig } from "./PostsRepository";
-
-let root = document.getElementById("root");
 
 let postsRepo = new PostsRepository(defaultConfig);
 
@@ -19,16 +20,21 @@ postsRepo.count().then(postCount => {
 });
 
 let app = (
-  <Router>
-    <App>
-      <Routes />
-    </App>
-  </Router>
+	<Router>
+		<Provider renderer={createRenderer()}>
+      <App>
+	      <Routes />
+	    </App>
+	  </Provider>
+	</Router>
 );
 
-ReactDOM.render(app, root);
+const init = () => {
+	let root = render(app, document.getElementById("root"), root);
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.register();
+init()
+
+if(module.hot) module.hot.accept('./App', init);
+
+require('offline-plugin/runtime').install()

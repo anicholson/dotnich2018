@@ -1,11 +1,53 @@
-import React from "react";
+import { h } from 'preact';
+import { createComponent, createComponentWithProxy } from 'preact-fela';
+import { P, List, ListItem } from '../../typography';
 
-import styles from "../markdown_styling.module.scss";
+/*
+default renderers = {
+  root: 'div',
+  break: 'br',
+  paragraph: 'p',
+  emphasis: 'em',
+  strong: 'strong',
+  thematicBreak: 'hr',
+  blockquote: 'blockquote',
+  delete: 'del',
+  link: 'a',
+  image: 'img',
+  linkReference: 'a',
+  imageReference: 'img',
+  table: SimpleRenderer.bind(null, 'table'),
+  tableHead: SimpleRenderer.bind(null, 'thead'),
+  tableBody: SimpleRenderer.bind(null, 'tbody'),
+  tableRow: SimpleRenderer.bind(null, 'tr'),
+  tableCell: TableCell,
 
-class MarkdownRoot extends React.PureComponent {
-  render() {
-    return <article className={styles.root}>{this.props.children}</article>;
-  }
+  list: List,
+  listItem: ListItem,
+  definition: NullRenderer,
+  heading: Heading,
+  inlineCode: InlineCode,
+  code: CodeBlock,
+  html: Html,
+  virtualHtml: VirtualHtml
+}
+*/
+
+const noRules = (rule) => ({})
+
+const MarkdownRoot = createComponentWithProxy(noRules, 'article');
+const Break = createComponent(noRules, 'br');
+const Paragraph = P;
+
+
+
+const defaults = {
+  root: MarkdownRoot,
+  break: Break,
+  paragraph: Paragraph,
+  list: List,
+  listItem: ListItem,
 }
 
-export { MarkdownRoot };
+
+export default defaults;

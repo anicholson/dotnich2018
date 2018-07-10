@@ -1,28 +1,25 @@
-import React from "react";
+import { h, Component } from "preact";
 import { Route } from "react-router-dom";
 
 import {
   Homepage,
-  ContactPage,
+//  ContactPage,
   Bio,
-  CV,
+//  CV,
   WritingPage,
-  SampleMarkdownPage
+//  SampleMarkdownPage
 } from "./pages";
 
-class Routes extends React.Component {
-  render() {
-    return (
+
+const Routes = () => (
       <div>
         <Route path="/bio" component={Bio} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/cv" component={CV} />
+    {/*<Route path="/contact" component={ContactPage} />
+        <Route path="/cv" component={CV} />*/}
         <Route path="/writing" component={WritingPage} />
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/design" component={SampleMarkdownPage} />
+		{/*<Route exact path="/design" component={SampleMarkdownPage} />*/}
       </div>
     );
-  }
-}
 
 export default Routes;

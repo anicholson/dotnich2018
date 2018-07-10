@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import "./App.scss";
+import { h } from 'preact';
+import { createComponent } from 'preact-fela';
 
-class App extends Component {
-  render() {
-    return <div className="App">{this.props.children}</div>;
-  }
-}
+const styleRules = () => ({
+
+})
+
+const App = createComponent(styleRules)
 
 export default App;

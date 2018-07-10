@@ -1,18 +1,14 @@
-import React, { Component } from "react";
+import { h, Component } from "preact";
 import Markdown from "react-markdown";
 
-import { MarkdownRoot as root } from "../markdown/renderers";
+import defaults from "../markdown/renderers";
 
-class MarkdownPage extends Component {
-  render() {
-    return (
+const MarkdownPage = ({input}) => (
       <Markdown
         escapeHtml={false}
-        source={this.props.input}
-        renderers={{ root: root }}
-      />
+        source={input}
+        renderers={defaults}
+    />
     );
-  }
-}
 
 export default MarkdownPage;

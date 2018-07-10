@@ -1,4 +1,4 @@
-import React from "react";
+import { h } from 'preact';
 
 import SiteNav from "../site_nav";
 import Headline from "../headline";

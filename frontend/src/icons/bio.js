@@ -1,7 +1,9 @@
-import React from "react";
-import styles from "./icon.module.scss";
+import { h } from 'preact';
+import { connect } from 'preact-fela';
 
-const Bio = ({ size }) => (
+import rules from './iconStyles';
+
+const Bio = ({ styles, size }) => (
   <svg
     className={styles.icon}
     xmlns="http://www.w3.org/2000/svg"
@@ -54,4 +56,4 @@ const Bio = ({ size }) => (
   </svg>
 );
 
-export default Bio;
+export default connect(rules)(Bio);

@@ -1,7 +1,9 @@
-import React from "react";
-import styles from "./icon.module.scss";
+import { h } from 'preact';
+import { connect } from 'preact-fela';
 
-const Contact = ({ size }) => {
+import  rules from './iconStyles';
+
+const Contact = ({ styles, size }) => {
   let oldSizeRatio = size / 134.0;
 
   return (
@@ -71,4 +73,4 @@ const Contact = ({ size }) => {
   );
 };
 
-export default Contact;
+export default connect(rules)(Contact);
