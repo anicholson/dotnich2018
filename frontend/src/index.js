@@ -1,6 +1,7 @@
 import { h, render, Component } from "preact";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from 'preact-fela';
+import 'preact/devtools';
 
 import createRenderer from './felaRenderer';
 
