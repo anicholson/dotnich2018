@@ -1,13 +1,9 @@
-import React from "react";
-
-//import styles from "../markdown_styling.module.scss";
+import { h } from 'preact';
 
 const styles= {}
 
-class MarkdownRoot extends React.PureComponent {
-  render() {
-    return <article className={styles.root}>{this.props.children}</article>;
-  }
-}
+const MarkdownRoot = ({children}) => (
+    <article className={styles.root}>{children}</article>
+);
 
 export { MarkdownRoot };
