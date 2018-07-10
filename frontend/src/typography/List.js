@@ -2,27 +2,28 @@ import { h } from 'preact';
 import { createComponent, createComponentWithProxy } from 'preact-fela';
 
 import colors from '../colors';
-import bullet from '../assets/ink_blot.svg';
+import randomBullet from './Bullet';
+
 
 const commonListRules = {
   paddingLeft: '1em',
   listStyle: 'none'
 }
 
-const ulRules = {
+const ulRules = () => ({
   '> li': {
     '&:before': {
       content: "' '",
       display: "inline-block",
       height: '0.75em',
       width: '0.75em',
-      backgroundImage: `url(${bullet})`,
+      backgroundImage: `url(${randomBullet()})`,
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       marginRight: '0.5em'
     },
   }
-}
+})
 
 const olRules = {
   '> li': {
@@ -38,7 +39,7 @@ const olRules = {
       marginRight: '0.5em',
       textAlign: 'right',
       direction: 'rtl',
-      
+
     }
   },
   counterReset: 'li',
@@ -51,7 +52,7 @@ export const ListItem = (props) => {
 
 const UnorderedList = createComponentWithProxy((rules) => ({
   ...commonListRules,
-  ...ulRules,
+  ...ulRules(),
 }), 'ul')
 
 const OrderedList = createComponentWithProxy((rules) => ({
