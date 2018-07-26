@@ -15,8 +15,8 @@ const CV = ({ styles, size }) => {
       viewBox={`0 0 ${size} ${size}`}
     >
       <defs>
-      <circle
-    className={styles.background}
+        <circle
+          className={styles.background}
           id="cv_b"
           cx={64 * oldSizeRatio}
           cy={64 * oldSizeRatio}

@@ -6,4 +6,4 @@ export default {
   blue: 'blue',
   cinnamon: '#763300',
   white: '#FFF9F4'
-}
+};

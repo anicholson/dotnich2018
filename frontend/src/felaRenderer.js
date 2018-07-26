@@ -2,7 +2,7 @@ import { createRenderer as createFelaRenderer } from 'fela';
 import webPreset from 'fela-preset-web';
 import merge from 'lodash/fp/merge';
 
-import colors from './colors'
+import colors from './colors';
 
 import f2 from "./fonts/cooperhewitt-book-webfont.woff2";
 import f3 from "./fonts/cooperhewitt-semibolditalic-webfont.woff";
@@ -24,11 +24,11 @@ export default function createRenderer(options = {}) {
 	  {
 	  },
 	  options
-  )
+  );
 
-	const renderer = createFelaRenderer(rendererOptions)
+  const renderer = createFelaRenderer(rendererOptions);
 
-	renderer.renderStatic(`
+  renderer.renderStatic(`
 
 @font-face {
     font-family: 'Born';
@@ -100,5 +100,5 @@ body {
 
 `);
 
-	return renderer;
+  return renderer;
 }

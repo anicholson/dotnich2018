@@ -2,7 +2,7 @@ import colors from '../colors';
 
 export default ({size}) => ({
   mainColor: {
-    fill: colors.mud,
+    fill: colors.mud
   },
   background: {
     fill: colors.dust,
@@ -15,6 +15,6 @@ export default ({size}) => ({
   },
 
   highlight: {
-    fill: colors.custard,
+    fill: colors.custard
   }
-})
+});

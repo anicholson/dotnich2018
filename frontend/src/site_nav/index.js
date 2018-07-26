@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 import { createComponent } from 'preact-fela';
 
 const containerRules = _ => ({
-	width: '135px',
-	margin: '0 auto'
-})
+  width: '135px',
+  margin: '0 auto'
+});
 
 const navRules = _ => ({
-	listStyle: 'none',
-	padding: 0
-})
+  listStyle: 'none',
+  padding: 0
+});
 
-const Container = createComponent(containerRules, 'div')
-const Nav = createComponent(navRules, 'ul')
+const Container = createComponent(containerRules, 'div');
+const Nav = createComponent(navRules, 'ul');
 
 class SiteNav extends Component {
   render() {

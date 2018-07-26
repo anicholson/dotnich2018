@@ -14,13 +14,13 @@ const rules = () => ({
   subline: {
     color: colors.cinnamon
   }
-})
+});
 
 const Headline = ({styles}) => (
-      <header className={styles.container}>
-        <h1 className={styles.title}>.nich</h1>
-        <h2 className={styles.subline}>build people, build software</h2>
-      </header>
-)
+  <header className={styles.container}>
+    <h1 className={styles.title}>.nich</h1>
+    <h2 className={styles.subline}>build people, build software</h2>
+  </header>
+);
 
 export default connect(rules)(Headline);

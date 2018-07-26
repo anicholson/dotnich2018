@@ -4,4 +4,4 @@ import { createComponent } from 'preact-fela';
 const rules = () => ({
 
 
-})
+});

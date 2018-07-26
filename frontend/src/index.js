@@ -21,21 +21,21 @@ postsRepo.count().then(postCount => {
 });
 
 let app = (
-	<Router>
-		<Provider renderer={createRenderer()}>
+  <Router>
+    <Provider renderer={createRenderer()}>
       <App>
 	      <Routes />
 	    </App>
 	  </Provider>
-	</Router>
+  </Router>
 );
 
 const init = () => {
-	let root = render(app, document.getElementById("root"), root);
-}
+  let root = render(app, document.getElementById("root"), root);
+};
 
-init()
+init();
 
-if(module.hot) module.hot.accept('./App', init);
+if (module.hot) module.hot.accept('./App', init);
 
-require('offline-plugin/runtime').install()
+require('offline-plugin/runtime').install();

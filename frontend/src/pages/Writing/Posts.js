@@ -16,5 +16,5 @@ export const Posts = ({match, posts}) => {
 	      <br />May you find something that resonates, challenges, or informs you :)</P>
       {entries}
     </Page>
-);
-}
+  );
+};

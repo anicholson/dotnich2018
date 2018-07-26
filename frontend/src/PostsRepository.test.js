@@ -67,7 +67,7 @@ describe("PostsRepository", () => {
       moxios.withMock(() => {
         let repo = new PostsRepository({
           fetchUrl: stubUrl,
-          store: store
+          store
         });
 
         let onFulfilled = sinon.spy();
@@ -99,7 +99,7 @@ describe("PostsRepository", () => {
     };
 
     let repo = new PostsRepository({
-      store: store
+      store
     });
 
     it("fetches data from the local store", done => {

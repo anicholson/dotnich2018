@@ -8,7 +8,7 @@ import randomBullet from './Bullet';
 const commonListRules = {
   paddingLeft: '1em',
   listStyle: 'none'
-}
+};
 
 const ulRules = () => ({
   '> li': {
@@ -21,9 +21,9 @@ const ulRules = () => ({
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       marginRight: '0.5em'
-    },
+    }
   }
-})
+});
 
 const olRules = {
   '> li': {
@@ -38,29 +38,29 @@ const olRules = {
       marginLeft: '-1.5em',
       marginRight: '0.5em',
       textAlign: 'right',
-      direction: 'rtl',
+      direction: 'rtl'
 
     }
   },
-  counterReset: 'li',
-}
+  counterReset: 'li'
+};
 
 export const ListItem = (props) => {
-  return h('li', props)
-}
+  return h('li', props);
+};
 
 
 const UnorderedList = createComponentWithProxy((rules) => ({
   ...commonListRules,
-  ...ulRules(),
-}), 'ul')
+  ...ulRules()
+}), 'ul');
 
 const OrderedList = createComponentWithProxy((rules) => ({
   ...commonListRules,
   ...olRules
-}), 'ol')
+}), 'ol');
 
 export const List = (props) => {
-  let el = props.ordered ? OrderedList : UnorderedList
-  return h(el, props)
-}
+  let el = props.ordered ? OrderedList : UnorderedList;
+  return h(el, props);
+};

@@ -10,6 +10,6 @@ import bullet6 from '../assets/ink_blot_6.svg';
 
 const allBullets = [ bullet1, bullet2, bullet3, bullet4, bullet5, bullet6];
 
-const randomBullet = () => (sample(allBullets))
+const randomBullet = () => (sample(allBullets));
 
 export default randomBullet;

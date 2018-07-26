@@ -29,8 +29,8 @@ class WritingPage extends Component {
 		  let bDate = Date.parse(b.date);
 
 		  return bDate - aDate;
-	      })
-        this.setState({ posts: posts });
+	      });
+        this.setState({ posts });
       });
   }
 
@@ -50,11 +50,11 @@ class WritingPage extends Component {
 
     if (showIndex) {
       return (
-          <Posts match={this.props.match} posts={this.state.posts} />
+        <Posts match={this.props.match} posts={this.state.posts} />
       );
-    } else {
-      return <div>{routes}</div>;
     }
+    return <div>{routes}</div>;
+    
   }
 }
 

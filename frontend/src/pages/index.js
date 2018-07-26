@@ -8,4 +8,4 @@ import WritingPage from "./WritingPage";
 
 //export { Homepage, ContactPage, Bio, CV, WritingPage, SampleMarkdownPage };
 
-export { Homepage, Bio, WritingPage }
+export { Homepage, Bio, WritingPage };

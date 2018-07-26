@@ -1,18 +1,18 @@
-import { h } from 'preact'
-import { createComponentWithProxy } from 'preact-fela'
+import { h } from 'preact';
+import { createComponentWithProxy } from 'preact-fela';
 
 const commonRules = {
   fontFamily: 'Born, serif'
-}
+};
 
 const P = createComponentWithProxy(() => ({
   ...commonRules,
   marginBottom: '1.3em'
-}), 'p')
+}), 'p');
 
 const Small = createComponentWithProxy(() => ({
   ...commonRules,
   fontSize: '0.75em'
-}), 'small')
+}), 'small');
 
-export { P, Small }
+export { P, Small };

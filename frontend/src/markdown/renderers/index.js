@@ -33,7 +33,7 @@ default renderers = {
 }
 */
 
-const noRules = (rule) => ({})
+const noRules = (rule) => ({});
 
 const MarkdownRoot = createComponentWithProxy(noRules, 'article');
 const Break = createComponent(noRules, 'br');
@@ -46,8 +46,8 @@ const defaults = {
   break: Break,
   paragraph: Paragraph,
   list: List,
-  listItem: ListItem,
-}
+  listItem: ListItem
+};
 
 
 export default defaults;

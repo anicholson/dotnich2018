@@ -10,4 +10,4 @@ export const Description = ({post, base}) => {
       </div>
     </Link>
   );
-}
+};
