@@ -3,6 +3,8 @@ import PostsRepository from "./postsRepository";
 import { equal } from "assert";
 import sinon from "sinon";
 
+/* eslint-disable */
+
 const stubResponse = JSON.stringify({
   posts: [
     {
@@ -109,3 +111,5 @@ describe("PostsRepository", () => {
     });
   });
 });
+
+/* eslint-enable */
