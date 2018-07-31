@@ -1,10 +1,11 @@
 import { h } from 'preact';
-import { createComponent } from 'preact-fela';
+import DefaultMeta from './meta';
 
-const styleRules = () => ({
-
-});
-
-const App = createComponent(styleRules);
+const App = ({children}) => (
+    <div className='application'>
+    <DefaultMeta/>
+    { children }
+  </div>
+);
 
 export default App;
