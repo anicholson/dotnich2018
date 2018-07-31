@@ -125,7 +125,8 @@ module.exports = {
       disable: ENV !== 'production'
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(ENV)
+      'process.env.NODE_ENV': JSON.stringify(ENV),
+      '__BUILT_AT__' : JSON.stringify(new Date(Date.now()).toISOString()),
     }),
     new HtmlWebpackPlugin({
       template: './index.ejs',
