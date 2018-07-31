@@ -1,10 +1,29 @@
 import { h, Component } from 'preact';
 import { Page } from './Page';
 import { H1, P } from '../typography';
+import Meta from '../meta';
+
+const pageMeta = {
+  meta: [
+    { property: 'og:title', content: 'précis'},
+    { property: 'og:type', content: 'profile'},
+    { property: "og:url",  content: "https://andrewdotni.ch/bio" },
+    { property: "og:description", content: 'A brief bio and about me page' },
+    { property: "og:image", content: "" },
+    { property: "og:locale", content: "en_AU" },
+    { property: "og:determiner", content: "a"},
+    { property: "og_site_name", content: "andrewdotni.ch" },
+    { property: 'profile:first_name', content: 'Andy' },
+    { property: 'profile:last_name', content: 'Nicholson' },
+    { property: 'profile:username', content: 'andrewdotnich' },
+    { property: 'profile:gender', content: 'male' },
+  ]
+};
 
 
 const Bio = () => (
   <Page>
+    <Meta {...pageMeta} />
     <H1>pr&eacute;cis</H1>
 
     <P>Hi! I&rsquo;m a 30-year-old software developer from Melbourne, Australia. Please call me Andy :)</P>
