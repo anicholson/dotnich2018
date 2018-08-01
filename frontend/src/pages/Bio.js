@@ -1,3 +1,6 @@
+// @flow
+// @jsx h
+
 import { h, Component } from 'preact';
 import { Page } from './Page';
 import { H1, P } from '../typography';

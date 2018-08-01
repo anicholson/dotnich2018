@@ -1,3 +1,6 @@
+// @flow
+// @jsx h
+
 import { h } from 'preact';
 import { createComponentWithProxy } from 'preact-fela';
 

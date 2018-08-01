@@ -11,6 +11,9 @@ const DefaultMeta = {
   meta:[
     { name: "description", content: "The personal web home of Andy Nicholson, a software developer in Australia"},
     { property: "og:type", content: "website" },
+    { property: "og:image", content: 'https://placekitten.com/400/400' },
+    { property: "og:title", content: "andrewdotni.ch" },
+    { property: "og:url", content: "https://andrewdotni.ch/"},
   ],
 };
 

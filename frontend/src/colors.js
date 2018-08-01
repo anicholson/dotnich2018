@@ -1,3 +1,5 @@
+// @flow
+
 export default {
   custard: '#D7B787',
   mud: '#5E5553',

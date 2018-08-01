@@ -1,3 +1,5 @@
+// @flow
+
 import { sample } from 'lodash/fp';
 
 import bullet1 from '../assets/ink_blot_1.svg';
@@ -8,7 +10,7 @@ import bullet5 from '../assets/ink_blot_5.svg';
 import bullet6 from '../assets/ink_blot_6.svg';
 
 
-const allBullets = [ bullet1, bullet2, bullet3, bullet4, bullet5, bullet6];
+const allBullets : $ReadOnlyArray<string> = [ bullet1, bullet2, bullet3, bullet4, bullet5, bullet6];
 
 const randomBullet = () => (sample(allBullets));
 

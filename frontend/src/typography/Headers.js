@@ -1,3 +1,6 @@
+// @flow
+// @jsx h
+
 import { h } from 'preact';
 import { createComponent } from 'preact-fela';
 import colors from '../colors';

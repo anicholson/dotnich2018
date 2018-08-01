@@ -1,3 +1,5 @@
+// @flow
+// @jsx h
 import { h, render, Component } from "preact";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from 'preact-fela';
@@ -31,11 +33,18 @@ let app = (
 );
 
 const init = () => {
-  let root = render(app, document.getElementById("root"), root);
+  let rootEl : ?Element  = document.getElementById('root');
+  if(!rootEl) {
+    throw new Error("No app container el found");
+  } else {
+    let root
+    root = render(app, rootEl, root);
+  }
 };
 
 init();
 
+// $FlowFixMe
 if (module.hot) module.hot.accept('./App', init);
 
 require('offline-plugin/runtime').install();

@@ -1,3 +1,6 @@
+// @flow
+// @jsx h
+
 import { h } from 'preact';
 import { createComponent, createComponentWithProxy } from 'preact-fela';
 
@@ -45,7 +48,7 @@ const olRules = {
   counterReset: 'li'
 };
 
-export const ListItem = (props) => {
+export const ListItem = (props : *) => {
   return h('li', props);
 };
 
@@ -60,7 +63,7 @@ const OrderedList = createComponentWithProxy((rules) => ({
   ...olRules
 }), 'ol');
 
-export const List = (props) => {
+export const List = (props : *) => {
   let el = props.ordered ? OrderedList : UnorderedList;
   return h(el, props);
 };

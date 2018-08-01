@@ -1,7 +1,14 @@
+// @flow
+// @jsx h
+
 import { h } from 'preact';
 import DefaultMeta from './meta';
 
-const App = ({children}) => (
+type AppProps = {
+  children: *,
+}
+
+const App = ({children} : AppProps) => (
     <div className='application'>
     <DefaultMeta/>
     { children }
